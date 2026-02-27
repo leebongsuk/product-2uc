@@ -55,10 +55,19 @@ body {
     color: var(--text-color);
 }
 
+.tool-section {
+    margin-bottom: 2rem;
+}
+
 h1 {
     color: var(--primary-color);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     transition: color 0.3s ease;
+}
+
+.subtitle {
+    margin-bottom: 2rem;
+    opacity: 0.8;
 }
 
 .lotto-numbers {
@@ -82,7 +91,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#generator-btn {
+#generator-btn, #start-test-btn {
     background-color: var(--primary-color);
     color: var(--white);
     border: none;
@@ -93,12 +102,60 @@ h1 {
     transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-#generator-btn:hover {
+#generator-btn:hover, #start-test-btn:hover {
     background-color: var(--btn-hover);
 }
 
-#generator-btn:active {
+#generator-btn:active, #start-test-btn:active {
     transform: scale(0.95);
+}
+
+/* Animal Face Test Specific Styles */
+#webcam-container {
+    margin: 1.5rem auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+#webcam-container canvas {
+    border-radius: 1rem;
+}
+
+#label-container {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.prediction-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.label-name {
+    width: 60px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.bar-wrapper {
+    flex-grow: 1;
+    background-color: var(--background-color);
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background-color: var(--secondary-color);
+    transition: width 0.2s ease;
 }
 
 .inquiry-section, .comments-section {
@@ -106,7 +163,7 @@ h1 {
     text-align: left;
 }
 
-.inquiry-section hr, .comments-section hr {
+.inquiry-section hr, .comments-section hr, .tool-section hr {
     border: 0;
     border-top: 1px solid var(--shadow-color);
     margin-bottom: 1.5rem;

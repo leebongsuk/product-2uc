@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lotto Number Generator</title>
+    <title>Lotto & Animal Face Test</title>
     <link href='/style.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
 </head>
 <body>
     <div class="container">
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
-        <h1>Lotto Number Generator</h1>
-        <div class="lotto-numbers">
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-        </div>
-        <button id="generator-btn">Generate Numbers</button>
+        
+        <section class="tool-section">
+            <h1>Lotto Number Generator</h1>
+            <div class="lotto-numbers">
+                <span class="number"></span>
+                <span class="number"></span>
+                <span class="number"></span>
+                <span class="number"></span>
+                <span class="number"></span>
+                <span class="number"></span>
+            </div>
+            <button id="generator-btn">Generate Numbers</button>
+        </section>
+
+        <section class="tool-section">
+            <hr>
+            <h1>Animal Face Test</h1>
+            <p class="subtitle">Are you a Dog or a Cat face?</p>
+            <div id="webcam-container"></div>
+            <div id="label-container"></div>
+            <button type="button" id="start-test-btn">Start Test (Webcam)</button>
+        </section>
         
         <div class="inquiry-section">
             <hr>
