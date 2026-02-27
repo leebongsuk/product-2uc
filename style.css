@@ -25,9 +25,10 @@ body {
     color: var(--text-color);
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start;
+    min-height: 100vh;
     margin: 0;
+    padding: 2rem 0;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -39,6 +40,8 @@ body {
     text-align: center;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    width: 90%;
+    max-width: 600px;
 }
 
 .theme-toggle {
@@ -98,12 +101,12 @@ h1 {
     transform: scale(0.95);
 }
 
-.inquiry-section {
+.inquiry-section, .comments-section {
     margin-top: 2rem;
     text-align: left;
 }
 
-.inquiry-section hr {
+.inquiry-section hr, .comments-section hr {
     border: 0;
     border-top: 1px solid var(--shadow-color);
     margin-bottom: 1.5rem;
