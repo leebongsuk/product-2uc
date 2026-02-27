@@ -28,10 +28,17 @@
         <section class="tool-section">
             <hr>
             <h1>Animal Face Test</h1>
-            <p class="subtitle">Are you a Dog or a Cat face?</p>
-            <div id="webcam-container"></div>
+            <p class="subtitle">Upload a photo to see if you are a Dog or a Cat face!</p>
+            
+            <div class="upload-container">
+                <input type="file" id="image-upload" accept="image/*" hidden>
+                <button type="button" id="upload-btn">Upload Photo</button>
+                <div id="image-preview-container">
+                    <img id="image-preview" src="#" alt="Your photo" style="display: none;">
+                </div>
+            </div>
+
             <div id="label-container"></div>
-            <button type="button" id="start-test-btn">Start Test (Webcam)</button>
         </section>
         
         <div class="inquiry-section">
