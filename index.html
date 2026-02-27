@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lotto & Animal Face Test</title>
+    <title>Lotto & Animal Face Test | Fun & Utility Hub</title>
+    <meta name="description" content="Generate lucky lotto numbers and find your animal face type with our AI-powered test. Professional tools for your daily fun.">
+    <meta name="keywords" content="Lotto, Animal Face Test, AI Test, Cat vs Dog, Lucky Numbers">
     <meta name="google-adsense-account" content="ca-pub-7610616594568266">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7610616594568266" crossorigin="anonymous"></script>
     <link href='/style.css' rel='stylesheet'>
@@ -11,11 +13,22 @@
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
-        
-        <section class="tool-section">
+    <header class="main-header">
+        <nav class="nav-container">
+            <span class="logo">Lotto & Animal AI</span>
+            <div class="nav-links">
+                <a href="#lotto">Lotto</a>
+                <a href="#animal">Animal Test</a>
+                <a href="#inquiry">Contact</a>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="lotto" class="tool-section">
             <h1>Lotto Number Generator</h1>
+            <p class="description-text">Need some luck? Our advanced random generator provides 6 unique numbers for your next lottery ticket. We use a fair randomization algorithm to ensure maximum variance.</p>
             <div class="lotto-numbers">
                 <span class="number"></span>
                 <span class="number"></span>
@@ -24,37 +37,54 @@
                 <span class="number"></span>
                 <span class="number"></span>
             </div>
-            <button id="generator-btn">Generate Numbers</button>
+            <button id="generator-btn">Generate Lucky Numbers</button>
         </section>
 
-        <section class="tool-section">
+        <section id="animal" class="tool-section">
             <hr>
-            <h1>Animal Face Test</h1>
-            <p class="subtitle">Upload a photo to see if you are a Dog or a Cat face!</p>
+            <h1>AI Animal Face Test</h1>
+            <p class="subtitle">Are you a charming Dog or a mysterious Cat face?</p>
+            <p class="description-text">Our AI model, trained on thousands of images, analyzes your facial features to determine which animal archetype you resemble most. Upload your photo and find out instantly!</p>
             
             <div class="upload-container">
                 <input type="file" id="image-upload" accept="image/*" hidden>
-                <button type="button" id="upload-btn">Upload Photo</button>
+                <button type="button" id="upload-btn">Upload Photo for Analysis</button>
                 <div id="image-preview-container">
                     <img id="image-preview" src="#" alt="Your photo" style="display: none;">
                 </div>
             </div>
-
             <div id="label-container"></div>
         </section>
-        
-        <div class="inquiry-section">
+
+        <section class="info-article tool-section">
             <hr>
-            <h3>Affiliate Inquiry</h3>
+            <h2>Why Use Our Tools?</h2>
+            <div class="article-grid">
+                <div class="article-item">
+                    <h3>Smart Randomization</h3>
+                    <p>Our Lotto generator isn't just random; it's designed to provide a wide spread of numbers, avoiding common patterns that many people choose.</p>
+                </div>
+                <div class="article-item">
+                    <h3>AI Technology</h3>
+                    <p>The Animal Face Test utilizes TensorFlow-based deep learning models to ensure high accuracy in facial feature recognition.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="inquiry" class="inquiry-section">
+            <hr>
+            <h3>Business & Affiliate Inquiry</h3>
+            <p class="description-text">We are open to partnerships and advertising opportunities. Send us a message below.</p>
             <form action="https://formspree.io/f/xojnbakj" method="POST" class="inquiry-form">
-                <input type="email" name="email" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
+                <input type="email" name="email" placeholder="Your professional email" required>
+                <textarea name="message" placeholder="Describe your inquiry" required></textarea>
                 <button type="submit" class="submit-btn">Send Inquiry</button>
             </form>
-        </div>
+        </section>
 
-        <div class="comments-section">
+        <section class="comments-section">
             <hr>
+            <h3>Community Comments</h3>
             <div id="disqus_thread"></div>
             <script>
                 (function() {
@@ -64,9 +94,18 @@
                 (d.head || d.body).appendChild(s);
                 })();
             </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Lotto & Animal AI Hub. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
+            </div>
         </div>
-    </div>
+    </footer>
     <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
