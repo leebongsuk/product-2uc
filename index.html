@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>로또 번호 생성기 & AI 동물상 테스트 | 재미와 유틸리티 허브</title>
-    <meta name="description" content="행운의 로또 번호를 생성하고 AI 기반 테스트로 나의 동물상을 확인해보세요. 일상의 즐거움을 위한 전문적인 도구를 제공합니다.">
-    <meta name="keywords" content="로또, 로또번호생성기, 동물상테스트, AI테스트, 강아지상 고양이상, 행운의숫자">
+    <title>로또 번호 생성기 & AI 동물상 테스트 | 전문 AI 유틸리티 서비스</title>
+    <meta name="description" content="최신 AI 기술을 활용한 동물상 테스트와 스마트 로또 번호 생성 서비스를 제공합니다. 개인정보를 저장하지 않는 안전하고 전문적인 웹 도구입니다.">
+    <meta name="keywords" content="로또번호생성, 인공지능 동물상, 얼굴인식 테스트, 로또 분석, 고품질 AI 도구">
     <meta name="google-adsense-account" content="ca-pub-7610616594568266">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7610616594568266" crossorigin="anonymous"></script>
     <link href='/style.css' rel='stylesheet'>
@@ -17,74 +17,95 @@
         <nav class="nav-container">
             <span class="logo">로또 & 동물상 AI</span>
             <div class="nav-links">
-                <a href="#lotto">로또 생성</a>
-                <a href="#animal">동물상 테스트</a>
-                <a href="#inquiry">제휴 문의</a>
+                <a href="#lotto">로또</a>
+                <a href="#animal">동물상</a>
+                <a href="#about">서비스 소개</a>
+                <a href="#faq">FAQ</a>
+                <a href="#inquiry">문의</a>
             </div>
             <button id="theme-toggle" class="theme-toggle" aria-label="테마 변경">🌓</button>
         </nav>
     </header>
 
     <main class="container">
+        <!-- 로또 섹션 -->
         <section id="lotto" class="tool-section">
-            <h1>로또 번호 생성기</h1>
-            <p class="description-text">행운이 필요하신가요? 저희의 고급 랜덤 생성기가 다음 로또 티켓을 위한 6개의 고유 번호를 제공합니다. 공정한 랜덤 알고리즘을 사용하여 최대의 분산도를 보장합니다.</p>
+            <h1>스마트 로또 번호 생성기</h1>
+            <p class="description-text">단순한 무작위 추출을 넘어, 공정한 확률 분포 알고리즘을 사용하여 6개의 숫자를 제공합니다. 매주 새로운 행운을 저희와 함께 시작해보세요.</p>
             <div class="lotto-numbers">
-                <span class="number"></span>
-                <span class="number"></span>
-                <span class="number"></span>
-                <span class="number"></span>
-                <span class="number"></span>
-                <span class="number"></span>
+                <span class="number"></span><span class="number"></span><span class="number"></span>
+                <span class="number"></span><span class="number"></span><span class="number"></span>
             </div>
-            <button id="generator-btn">행운의 번호 생성하기</button>
+            <button id="generator-btn">행운의 번호 생성</button>
         </section>
 
+        <!-- 동물상 섹션 -->
         <section id="animal" class="tool-section">
             <hr>
-            <h1>AI 동물상 테스트</h1>
-            <p class="subtitle">당신은 귀여운 강아지상인가요, 아니면 신비로운 고양이상인가요?</p>
-            <p class="description-text">수천 개의 이미지를 학습한 AI 모델이 당신의 이목구비를 분석하여 어떤 동물상을 가장 많이 닮았는지 확인해줍니다. 사진을 업로드하고 즉시 결과를 확인해보세요!</p>
+            <h1>AI 동물상 관상 테스트</h1>
+            <p class="subtitle">나의 얼굴은 어떤 동물과 가장 닮았을까요?</p>
+            <p class="description-text">본 서비스는 Google의 Teachable Machine 기술을 활용하여 구현되었습니다. 수천 장의 강아지, 고양이 사진 데이터를 학습한 인공지능이 당신의 얼굴 특징을 정밀하게 분석합니다.</p>
             
             <div class="upload-container">
                 <input type="file" id="image-upload" accept="image/*" hidden>
-                <button type="button" id="upload-btn">분석할 사진 업로드하기</button>
+                <button type="button" id="upload-btn">사진 선택 및 결과 확인</button>
                 <div id="image-preview-container">
-                    <img id="image-preview" src="#" alt="미리보기 이미지" style="display: none;">
+                    <img id="image-preview" src="#" alt="미리보기" style="display: none;">
                 </div>
             </div>
             <div id="label-container"></div>
         </section>
 
-        <section class="info-article tool-section">
+        <!-- 서비스 소개 섹션 (전문성 강화) -->
+        <section id="about" class="info-article tool-section">
             <hr>
-            <h2>저희 도구를 사용해야 하는 이유</h2>
+            <h2>기술 정보 및 서비스 철학</h2>
             <div class="article-grid">
                 <div class="article-item">
-                    <h3>스마트한 랜덤 방식</h3>
-                    <p>단순한 랜덤이 아닙니다. 많은 사람들이 선택하는 흔한 패턴을 피하고 넓은 범위의 숫자를 제공하도록 설계되었습니다.</p>
+                    <h3>TensorFlow.js 기반 AI</h3>
+                    <p>저희의 동물상 테스트는 브라우저 기반의 딥러닝 라이브러리인 TensorFlow.js를 사용합니다. 이는 이미지를 서버로 전송하지 않고 사용자의 기기에서 즉시 분석하므로 프라이버시가 완벽하게 보호됩니다.</p>
                 </div>
                 <div class="article-item">
-                    <h3>최신 AI 기술</h3>
-                    <p>동물상 테스트는 TensorFlow 기반의 딥러닝 모델을 사용하여 얼굴 특징 인식에 있어 높은 정확도를 제공합니다.</p>
+                    <h3>투명한 알고리즘</h3>
+                    <p>로또 번호 생성은 암호학적으로 안전한 난수 생성(CSPRNG) 원리를 지향하며, 사용자에게 편향되지 않은 진정한 무작위 숫자를 제공하는 것을 목표로 합니다.</p>
                 </div>
             </div>
         </section>
+
+        <!-- FAQ 섹션 (사용자 가치 증대) -->
+        <section id="faq" class="faq-section tool-section">
+            <hr>
+            <h2>자주 묻는 질문 (FAQ)</h2>
+            <div class="faq-item">
+                <h4>Q: 사진을 업로드하면 서버에 저장되나요?</h4>
+                <p>A: 아니요. 모든 분석은 웹 브라우저 상에서 실시간으로 이루어지며, 어떠한 이미지 데이터도 서버로 전송되거나 저장되지 않습니다.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q: 로또 번호 생성 결과는 실제 당첨과 관련이 있나요?</h4>
+                <p>A: 본 도구는 오락을 위한 번호 조합을 제공할 뿐, 실제 당첨 결과에 대해 어떠한 보장도 하지 않습니다.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q: 서비스 이용료가 있나요?</h4>
+                <p>A: 모든 서비스는 무료로 제공되며, 광고 수익을 통해 운영됩니다.</p>
+            </div>
+        </section>
         
+        <!-- 문의 섹션 -->
         <section id="inquiry" class="inquiry-section">
             <hr>
-            <h3>비즈니스 및 제휴 문의</h3>
-            <p class="description-text">파트너십 및 광고 문의를 환영합니다. 아래 양식을 통해 메시지를 보내주세요.</p>
+            <h3>문의 및 피드백</h3>
+            <p class="description-text">서비스 개선을 위한 제안이나 비즈니스 제휴 문의는 언제든 환영합니다.</p>
             <form action="https://formspree.io/f/xojnbakj" method="POST" class="inquiry-form">
-                <input type="email" name="email" placeholder="담당자 이메일 주소" required>
-                <textarea name="message" placeholder="문의 내용을 상세히 적어주세요" required></textarea>
-                <button type="submit" class="submit-btn">문의 보내기</button>
+                <input type="email" name="email" placeholder="답신 받을 이메일 주소" required>
+                <textarea name="message" placeholder="내용을 입력해주세요" required></textarea>
+                <button type="submit" class="submit-btn">메시지 전송</button>
             </form>
         </section>
 
+        <!-- 댓글 섹션 -->
         <section class="comments-section">
             <hr>
-            <h3>커뮤니티 댓글</h3>
+            <h3>사용자 의견</h3>
             <div id="disqus_thread"></div>
             <script>
                 (function() {
@@ -103,6 +124,7 @@
             <div class="footer-links">
                 <a href="/privacy.html">개인정보처리방침</a>
                 <a href="/terms.html">이용약관</a>
+                <a href="#about">회사 소개</a>
             </div>
         </div>
     </footer>
