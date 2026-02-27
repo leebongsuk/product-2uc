@@ -55,7 +55,7 @@ imageUpload.addEventListener('change', async (e) => {
 
     // Show loading state
     uploadBtn.disabled = true;
-    uploadBtn.textContent = "Analyzing...";
+    uploadBtn.textContent = "분석 중...";
 
     // Preview Image
     const reader = new FileReader();
@@ -67,7 +67,7 @@ imageUpload.addEventListener('change', async (e) => {
         await predict();
         
         uploadBtn.disabled = false;
-        uploadBtn.textContent = "Upload Another Photo";
+        uploadBtn.textContent = "다른 사진 업로드하기";
     };
     reader.readAsDataURL(file);
 });
@@ -79,7 +79,11 @@ async function predict() {
     labelContainer.innerHTML = "";
     
     for (let i = 0; i < maxPredictions; i++) {
-        const classLabel = prediction[i].className;
+        let classLabel = prediction[i].className;
+        // 한글 레이아웃을 위해 클래스명 번역 (모델 학습 데이터 기준)
+        if (classLabel.toLowerCase() === 'dog') classLabel = '강아지상';
+        if (classLabel.toLowerCase() === 'cat') classLabel = '고양이상';
+
         const probability = (prediction[i].probability * 100).toFixed(0) + "%";
         
         const barWrapper = document.createElement("div");
